@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background: #FFFEFD;
+}
+
+#search {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+}
+
+header .logo {
+    width: 45%;
+}
+
+.mobile {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.944444px;
+    color: #959292;
+
+}
+
+.active {
+    color: #D75D01;
+    text-decoration: underline #D75D01;
+}
+
+.btn {
+    background: #D75D01;
+    border-radius: 16px;
+    padding: 10px 22px;
+    color: white;
+}
+
+.btn:hover {
+    border: 1px solid #D75D01;
+    color: #D75D01;
+    background: none;
+}
+
+footer {
+    background: #000000;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 80px;
+}
+
+.foot .one,
+.foot .two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+
+.product {
+    width: 45%;
+}
+
+.features {
+    width: 45%;
+}
+
+.company {
+    width: 45%;
+    margin-top: 20px;
+}
+
+.help {
+    width: 45%;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #666666;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.944444px;
+    text-transform: capitalize;
+}
+
+footer h3 {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.944444px;
+    margin-bottom: 10px;
+}
+
+.reserve {
+    padding: 16px 80px;
+}
+
+.reserve p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+select {
+    background: #000;
+    color: white;
+    padding: 8px 30px;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.profile-mobile {
+    display: none;
+}
+
+.portfolio-container {
+    padding: 16px 80px;
+}
+
+.portfolio-head {
+    width: 45%;
+}
+
+.portfolio-head h2 {
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.944444px;
+    color: #030303;
+}
+
+.portfolio-head p {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.944444px;
+    color: #666666;
+
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.location span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.944444px;
+    color: #666666;
+}
+
+.interests {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interest-text {
+    width: 50%;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+.interest-text .tags{
+    margin-left: 30px;
+}
+
+.tags p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.944444px;
+    color: #D75D01;
+}
+
+.pfp {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.interest-text h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.944444px;
+    color: #030303;
+    margin-bottom: 20px;
+}
+
+.interest-text a {
+    background: #D75D01;
+    border-radius: 16px;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.944444px;
+    color: #FFFFFF;
+}
+
+.interest-text a:hover {
+    background: none;
+    border: 1px solid #D75D01;
+    color: #D75D01;
+}
+
+.portfolio-content {
+    margin-top: 0px;
+}
+
+.portfolio-container .btn {
+    float: right;
+    border: none;
+    background: none;
+    border: 1px solid #D75D01;
+    padding: 10px 24px;
+    border-radius: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #D75D01;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.944444px;
+}
+
+.portfolio-container .btn:hover {
+    background: #D75D01;
+    color: white;
+}
+
+.portfolio-images {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.one,
+.two,
+.three {
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.four,
+.five,
+.six {
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.seven,
+.eight,
+.nine {
+    width: 32%;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 320px) {
+    .portfolio-container {
+        padding: 16px 20px;
+    }
+
+    .portfolio-head {
+        width: 100%;
+    }
+
+    .portfolio-head h2{
+        font-size: 24px;
+    }
+
+    .portfolio-head p{
+        font-size: 16px;
+    }
+
+    .location span{
+        font-size: 10px;
+    }
+
+    .interest-text a{
+        font-size: 16px;
+    }
+
+    .interest-text h3{
+        font-size: 20px;
+    }
+
+    .pfp {
+        display: none;
+    }
+
+    .profile-mobile {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .interest-text {
+        width: 100%;
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .interest-text a {
+        position: absolute;
+        top: -60%;
+    }
+
+    /* .tags {
+        gap: px;
+    } */
+
+    .interest-text .tags{
+        margin-left: 10px;
+    }
+
+    .tags p{
+        font-size: 16px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .portfolio-images {
+        flex-direction: column;
+        margin-top: -20px;
+    }
+
+    .show{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven,
+    .eight,
+    .nine {
+        width: 100%;
+    }
+
+    header {
+        padding: 16px 20px;
+        position: relative;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .logo {
+        width: 30%;
+        margin-left: -15px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #search {
+        display: block;
+        /* margin: 0 auto; */
+        margin-left: -115px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        border: none;
+        background: #F4F4F4;
+        border-radius: 16px;
+    }
+
+    #search::placeholder {
+        text-align: center;
+    }
+
+    .icon {
+        position: absolute;
+        left: 20%;
+        top: 33%;
+    }
+
+    .hamburger {
+        display: block;
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .foot {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 16px 20px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    .foot .one,
+    .foot .two {
+        width: 100%;
+    }
+
+    .product {
+        width: 50%;
+        margin-top: 25px;
+    }
+
+    .features {
+        width: 50%;
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+
+    .company {
+        width: 50%;
+    }
+
+    .help {
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .reserve {
+        margin-left: -60px;
+    }
+}

@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background: #FFFEFD;
+}
+
+.portfolio-container {
+    padding: 16px 80px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.interests {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interest-text {
+    width: 45%;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.pfp {
+    width: 30%;
+}
+
+a {
+    background: #D75D01;
+    border-radius: 16px;
+    padding: 10px 24px;
+    color: white;
+}
+
+a:hover{
+    background: none;
+    border: 1px solid #D75D01;
+    color: #D75D01;
+}
+
+.portfolio-content{
+    margin-top: 0px;
+}
+
+.btn{
+    float: right;
+    border: none;
+    background: none;
+    border: 1px solid #D75D01;
+    padding: 10px 24px;
+    border-radius: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #D75D01;
+}
+
+.btn:hover{
+    background: #D75D01;
+    color: white;
+}
+
+.portfolio-images{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.one,
+.two,
+.three{
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.four,
+.five,
+.six{
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.seven,
+.eight,
+.nine{
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 320px) {
+.portfolio-container{
+    padding: 16px 20px;
+}
+
+.pfp{
+    display: none;
+}
+
+.interest-text{
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+.interest-text a{
+    position: absolute;
+    top: -40%;
+}
+
+.tags{
+    gap: 10px;
+}
+
+.btn{
+    display: none;
+}
+}
+
+.portfolio-images{
+    flex-direction: column;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine{
+    width: 100%;
+}
