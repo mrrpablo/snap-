@@ -485,7 +485,7 @@ select {
     .features {
         width: 50%;
         margin-left: 20px;
-        margin-top: -10px;
+        margin-top: 10px;
     }
 
     .company {
