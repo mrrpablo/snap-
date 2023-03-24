@@ -266,6 +266,7 @@ span {
 @media screen and (max-width: 800px) and (min-width: 320px) {
     .blog-container {
         padding: 16px 20px;
+        margin: 0 auto;
         background-color: #fdf2ed;
     }
 

@@ -150,12 +150,14 @@ footer h3 {
 select {
     background: #000;
     color: white;
-    padding: 8px 30px;
+    padding: 8px 35px;
     text-align: start;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+    margin-top: 10px;
 }
+
 
 .profile-mobile {
     display: none;
@@ -211,7 +213,7 @@ select {
 }
 
 .interest-text {
-    width: 50%;
+    width: 55%;
 }
 
 .tags {
@@ -219,22 +221,33 @@ select {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 50px;
+    /* gap: 80px; */
     margin-bottom: 50px;
     text-align: center;
-    
 }
 
 .interest-text .tags{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
-.tags p {
+.tags a {
+    white-space: nowrap;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 0.944444px;
     color: #D75D01;
+    /* border: 1px solid #D75D01; */
+    padding: 12px 32px;
+    margin-bottom: 20px;
+}
+
+.tags a:hover{
+    background: #D75D01;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    border-radius: 16px;
+    margin-bottom: 20px;
 }
 
 .pfp {
@@ -251,7 +264,7 @@ select {
     margin-bottom: 20px;
 }
 
-.interest-text a {
+.interest-btn  {
     background: #D75D01;
     border-radius: 16px;
     padding: 10px 24px;
@@ -262,7 +275,7 @@ select {
     color: #FFFFFF;
 }
 
-.interest-text a:hover {
+.interest-btn:hover {
     background: none;
     border: 1px solid #D75D01;
     color: #D75D01;
@@ -325,6 +338,7 @@ select {
 @media screen and (max-width: 800px) and (min-width: 320px) {
     .portfolio-container {
         padding: 16px 20px;
+        margin: 0 auto;
     }
 
     .portfolio-head {
@@ -343,7 +357,7 @@ select {
         font-size: 10px;
     }
 
-    .interest-text a{
+    .interest-btn{
         font-size: 16px;
     }
 
@@ -357,7 +371,7 @@ select {
 
     .profile-mobile {
         display: block;
-        margin-left: 10px;
+        margin-right: -10px;
     }
 
     .interest-text {
@@ -366,9 +380,9 @@ select {
         margin-top: 60px;
     }
 
-    .interest-text a {
+    .interest-btn {
         position: absolute;
-        top: -60%;
+        top: -40%;
     }
 
     /* .tags {
@@ -379,8 +393,9 @@ select {
         margin-left: 10px;
     }
 
-    .tags p{
+    .tags a{
         font-size: 16px;
+        padding: 10px 22px;
     }
 
     .btn {
@@ -410,6 +425,7 @@ select {
 
     header {
         padding: 16px 20px;
+        margin: 0 auto;
         position: relative;
     }
 
@@ -419,7 +435,7 @@ select {
 
     .logo {
         width: 30%;
-        margin-left: -15px;
+        margin-left: -10px;
     }
 
     .desktop {
@@ -433,7 +449,7 @@ select {
     #search {
         display: block;
         /* margin: 0 auto; */
-        margin-left: -115px;
+        margin-left: -110px;
         align-items: center;
         justify-content: center;
         padding: 8px 15px;
@@ -448,14 +464,15 @@ select {
 
     .icon {
         position: absolute;
-        left: 20%;
+        left: 25%;
         top: 33%;
     }
 
     .hamburger {
         display: block;
         width: 20%;
-        margin-left: 10px;
+        margin-left: 15px;
+        
     }
 
     .foot {
